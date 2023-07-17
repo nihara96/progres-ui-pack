@@ -1,4 +1,5 @@
 import ContactForm1 from "@/components/ContactForms/ContactForm1";
+import ContactForm2 from "@/components/ContactForms/ContactForm2";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
@@ -10,6 +11,7 @@ const Contact = () => {
         <AiOutlineArrowLeft className="text-3xl font-bold cursor-pointer hover:scale-110 transition duration-200" />
       </Link>
       <ContactForm1 />
+      <ContactForm2/>
     </div>
   );
 };
