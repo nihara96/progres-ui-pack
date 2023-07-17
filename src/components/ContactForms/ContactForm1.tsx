@@ -4,8 +4,8 @@ import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 
 const ContactForm1 = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-6 items-center w-full min-h-screen rounded-md border">
-      <div className="flex flex-1 min-h-screen items-center bg-gray-100">
+    <div className="flex flex-col md:flex-row gap-6 items-center w-full h-[700px] rounded-md border">
+      <div className="flex flex-1 h-[700px] items-center bg-gray-100">
         <div className="flex flex-col gap-4 px-6 md:px-20">
           <h3 className="text-3xl font-bold">Get in touch</h3>
           <p className="text-gray-500">

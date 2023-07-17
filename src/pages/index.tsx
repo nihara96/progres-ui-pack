@@ -1,3 +1,4 @@
+import Layout from "@/components/Layout/Layout";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
@@ -27,17 +28,19 @@ const Card: React.FC<CardProps> = ({ title, text, path }) => {
 
 export default function Home() {
   return (
-    <main className={`flex min-h-screen flex-col items-center p-24`}>
-      <div className="">
-        <h1 className="text-3xl font-semibold">Explore Awesome Components</h1>
-      </div>
-      <div className="my-24 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <Card
-          path="/contact"
-          title="Contact Forms"
-          text="Explore awesome contact forms design in tailwindcss"
-        />
-      </div>
+    <main>
+      <Layout className="flex min-h-screen flex-col items-center py-24">
+        <div className="">
+          <h1 className="text-3xl font-semibold">Explore Awesome Components</h1>
+        </div>
+        <div className="my-24 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
+          <Card
+            path="/contact"
+            title="Contact Forms"
+            text="Explore awesome contact forms design in tailwindcss"
+          />
+        </div>
+      </Layout>
     </main>
   );
 }
