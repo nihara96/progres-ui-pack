@@ -44,6 +44,11 @@ export default function Home() {
             title="Sign-in and Registration"
             text="Explore awesome contact forms design in tailwindcss"
           />
+          <Card
+            path="/alerts"
+            title="Alerts"
+            text="Explore awesome contact forms design in tailwindcss"
+          />
         </div>
       </Layout>
     </main>
