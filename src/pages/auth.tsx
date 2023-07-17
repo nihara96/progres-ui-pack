@@ -1,6 +1,7 @@
 import Login1 from "@/components/AuthPages/Login1";
 import Login2 from "@/components/AuthPages/Login2";
 import Login3 from "@/components/AuthPages/Login3";
+import Login4 from "@/components/AuthPages/Login4";
 import Layout from "@/components/Layout/Layout";
 import Link from "next/link";
 import React from "react";
@@ -14,7 +15,8 @@ const Auth = () => {
       </Link>
       <Login1 />
       <Login2 />
-      <Login3/>
+      <Login3 />
+      <Login4 />
     </Layout>
   );
 };

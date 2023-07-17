@@ -1,7 +1,9 @@
 import React from "react";
 import { SiTailwindcss } from "react-icons/si";
+import { FcGoogle } from "react-icons/fc";
+import { AiFillGithub } from "react-icons/ai";
 
-const Login2 = () => {
+const Login4 = () => {
   return (
     <div className="flex flex-col gap-6 justify-center items-center w-full h-[600px] rounded-md border">
       <div className="flex flex-col  items-center">
@@ -34,17 +36,22 @@ const Login2 = () => {
             Sign in
           </button>
         </div>
-        <div className="flex justify-center">
-          <p className="text-sm">
-            Not a member ?{" "}
-            <span className="text-[#00c49f] cursor-pointer">
-              Start a 14 day free trial
-            </span>
-          </p>
+        <div className="flex items-center justify-center">
+          <div className="w-full h-[1px] bg-gray-200 hidden md:block" />
+          <p className="w-full text-sm text-center">Or continue with</p>
+          <div className="w-full h-[1px] bg-gray-200 hidden md:block" />
+        </div>
+        <div className="flex flex-wrap gap-4">
+          <button className="flex items-center rounded-md gap-2 w-full shadow-md justify-center py-2">
+            <FcGoogle /> Google
+          </button>
+          <button className="flex items-center text-white rounded-md bg-[#24292f] gap-2 w-full shadow-md justify-center py-2">
+            <AiFillGithub className="text-xl" /> GitHub
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default Login2;
+export default Login4;

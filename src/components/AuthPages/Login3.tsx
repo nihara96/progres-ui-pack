@@ -6,7 +6,7 @@ const Login3 = () => {
     <div className="flex flex-col gap-6 justify-center items-center w-full h-[600px] rounded-md border">
       <div className="flex flex-col  items-center">
         <SiTailwindcss className="text-5xl text-[#00c49f]" />
-        <h3 className="text-2xl font-bold">Sign in to your account</h3>
+        <h3 className="text-2xl text-center font-bold">Sign in to your account</h3>
       </div>
       <div className="flex flex-col">
         <input
