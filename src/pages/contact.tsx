@@ -1,5 +1,6 @@
 import ContactForm1 from "@/components/ContactForms/ContactForm1";
 import ContactForm2 from "@/components/ContactForms/ContactForm2";
+import ContactForm3 from "@/components/ContactForms/ContactForm3";
 import Layout from "@/components/Layout/Layout";
 import Link from "next/link";
 import React from "react";
@@ -13,6 +14,7 @@ const Contact = () => {
       </Link>
       <ContactForm1 />
       <ContactForm2 />
+      <ContactForm3/>
     </Layout>
   );
 };
