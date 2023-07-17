@@ -33,10 +33,15 @@ export default function Home() {
         <div className="">
           <h1 className="text-3xl font-semibold">Explore Awesome Components</h1>
         </div>
-        <div className="my-24 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
+        <div className="my-24 grid gap-6 text-center lg:mb-0 lg:grid-cols-3 lg:text-left">
           <Card
             path="/contact"
             title="Contact Forms"
+            text="Explore awesome contact forms design in tailwindcss"
+          />
+          <Card
+            path="/auth"
+            title="Sign-in and Registration"
             text="Explore awesome contact forms design in tailwindcss"
           />
         </div>
