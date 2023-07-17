@@ -41,7 +41,7 @@ const Login4 = () => {
           <p className="w-full text-sm text-center">Or continue with</p>
           <div className="w-full h-[1px] bg-gray-200 hidden md:block" />
         </div>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
           <button className="flex items-center rounded-md gap-2 w-full shadow-md justify-center py-2">
             <FcGoogle /> Google
           </button>
