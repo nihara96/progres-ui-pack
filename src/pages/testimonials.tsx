@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout/Layout";
 import Testimonial1 from "@/components/Testimonials/Testimonial1";
+import Testimonial2 from "@/components/Testimonials/Testimonial2";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
@@ -11,6 +12,7 @@ const Testimonials = () => {
         <AiOutlineArrowLeft className="text-3xl font-bold cursor-pointer hover:scale-110 transition duration-200" />
       </Link>
       <Testimonial1/>
+      <Testimonial2/>
     </Layout>
   );
 };

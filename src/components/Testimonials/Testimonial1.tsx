@@ -21,7 +21,7 @@ const Testimonial1 = () => {
             src={profile}
           />
           <div className="flex items-center gap-2">
-            <h4 className="text-gray-500 text-sm lg:text-md font-bold">Judith Black</h4>
+            <h4 className="text-gray-500 text-sm lg:text-md font-bold">Helga Black</h4>
             <div className="w-[5px] h-[5px] rounded-full bg-gray-400" />
             <h4 className="text-gray-500 text-sm lg:text-md">CEO & Founder</h4>
           </div>
