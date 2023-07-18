@@ -7,15 +7,15 @@ const Testimonial3 = () => {
   return (
     <div className="flex flex-col py-10 gap-6 justify-center items-center w-full h-[600px] rounded-md border">
       <div className="flex flex-col lg:flex-row relative w-full bg-[#111827]">
-        <div className="absolute translate-x-20 -translate-y-[10%] ">
+        <div className="lg:absolute realative translate-x-24 lg:translate-x-20 -translate-y-[10%] ">
           <Image
-            className="w-[350px] h-auto rounded-3xl"
+            className="lg:w-[350px] w-[calc(100%-200px)] h-[200px] object-cover lg:h-auto rounded-3xl"
             src={profile}
             alt="profile"
           />
         </div>
-        <div className="flex w-full justify-end p-24">
-          <div className="flex flex-col gap-10 w-[50%]">
+        <div className="flex w-full justify-end p-10 lg:p-24">
+          <div className="flex flex-col gap-10 lg:w-[50%]">
             <h3 className="text-md lg:text-xl font-semibold text-white">
               “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               expedita voluptas culpa sapiente alias molestiae. Numquam corrupti

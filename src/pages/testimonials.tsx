@@ -14,7 +14,7 @@ const Testimonials = () => {
       </Link>
       <Testimonial1/>
       <Testimonial2/>
-      {/* <Testimonial3/> */}
+      <Testimonial3/>
     </Layout>
   );
 };
