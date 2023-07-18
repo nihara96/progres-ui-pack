@@ -49,6 +49,11 @@ export default function Home() {
             title="Alerts"
             text="Explore awesome contact forms design in tailwindcss"
           />
+          <Card
+            path="/testimonials"
+            title="Testimonials"
+            text="Explore awesome contact forms design in tailwindcss"
+          />
         </div>
       </Layout>
     </main>
