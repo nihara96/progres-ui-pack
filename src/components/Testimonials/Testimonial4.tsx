@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import profile from "../../../public/images/profile.jpg";
+import profile1 from "../../../public/images/profile1.jpg";
 
 import { FcDribbble, FcGoogle } from "react-icons/fc";
 
@@ -49,14 +50,14 @@ const Testimonial4 = () => {
         </h3>
         <div className="flex gap-2 items-center">
           <Image
-            src={profile}
+            src={profile1}
             alt="profile"
             className="w-16 h-16 rounded-full object-cover"
           />
 
           <div className="flex flex-col gap-2">
             <h4 className="text-gray-500 text-sm lg:text-md font-bold">
-              Helga Black
+              Leonard Krasner
             </h4>
             <h4 className="text-gray-500 text-sm lg:text-md">CEO & Founder</h4>
           </div>
