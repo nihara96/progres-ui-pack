@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout/Layout";
 import Testimonial1 from "@/components/Testimonials/Testimonial1";
 import Testimonial2 from "@/components/Testimonials/Testimonial2";
+import Testimonial3 from "@/components/Testimonials/Testimonial3";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
@@ -13,6 +14,7 @@ const Testimonials = () => {
       </Link>
       <Testimonial1/>
       <Testimonial2/>
+      {/* <Testimonial3/> */}
     </Layout>
   );
 };

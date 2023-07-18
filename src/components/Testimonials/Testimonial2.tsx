@@ -5,8 +5,8 @@ import profile from "../../../public/images/profile.jpg";
 const Testimonial2 = () => {
   return (
     <div className="flex flex-col gap-6 justify-center items-center w-full h-[600px] rounded-md border bg-gradient-to-r from-rose-100 to-teal-100">
-      <div className="flex flex-row gap-6 p-6 lg:p-60">
-        <div className="flex w-full">
+      <div className="flex flex-col lg:flex-row gap-6 p-6 lg:p-32">
+        <div className="flex justify-center lg:justify-start w-full">
           <Image
             className="w-60 h-60 object-cover rounded-2xl"
             src={profile}
@@ -14,7 +14,7 @@ const Testimonial2 = () => {
           />
         </div>
 
-        <div className="flex flex-col justify-between">
+        <div className="flex gap-10 flex-col justify-between">
           <h3 className="text-md lg:text-2xl font-semibold">
             “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
             expedita voluptas culpa sapiente alias molestiae. Numquam corrupti
