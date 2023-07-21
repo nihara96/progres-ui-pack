@@ -31,7 +31,9 @@ export default function Home() {
     <main>
       <Layout className="flex min-h-screen flex-col items-center py-24">
         <div className="">
-          <h1 className="text-3xl text-center font-semibold">Explore Awesome Components</h1>
+          <h1 className="text-3xl text-center font-semibold">
+            Explore Awesome Components
+          </h1>
         </div>
         <div className="my-24 grid gap-6 text-center lg:mb-0 lg:grid-cols-3 lg:text-left">
           <Card
@@ -52,6 +54,11 @@ export default function Home() {
           <Card
             path="/testimonials"
             title="Testimonials"
+            text="Explore awesome contact forms design in tailwindcss"
+          />
+          <Card
+            path="/textareas"
+            title="Textareas"
             text="Explore awesome contact forms design in tailwindcss"
           />
         </div>

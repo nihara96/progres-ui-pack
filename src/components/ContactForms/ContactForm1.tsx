@@ -16,7 +16,7 @@ const ContactForm1 = () => {
           </p>
           <div className="flex flex-col gap-4 mt-10">
             <div className="flex gap-2 text-gray-500">
-              <BiBuildings className="text-xl" /> 545 Mavis Island <br />{" "}
+              <BiBuildings className="text-xl" /> 545 Mavis Island <br />
               Chicago, IL 1234
             </div>
             <div className="flex gap-2 text-gray-500">
