@@ -1,6 +1,15 @@
 import Layout from "@/components/Layout/Layout";
+import AnimatedText from "@/components/Shared/AnimatedText";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
+
+import logo from "../../public/images/logo.png";
+import Image from "next/image";
+
+import { SiTailwindcss } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
+import { BiLogoTypescript } from "react-icons/bi";
 
 type CardProps = {
   title?: string;
@@ -15,7 +24,9 @@ const Card: React.FC<CardProps> = ({ title, text, path }) => {
       className="group rounded-lg border px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
       rel="noopener noreferrer"
     >
-      <h2 className={`flex items-center gap-2 mb-3 text-2xl font-semibold`}>
+      <h2
+        className={`flex justify-between items-center gap-2 mb-3 text-2xl font-semibold`}
+      >
         {title}
         <span className="inline-block items-center transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
           <AiOutlineArrowRight />
@@ -29,11 +40,36 @@ const Card: React.FC<CardProps> = ({ title, text, path }) => {
 export default function Home() {
   return (
     <main>
-      <Layout className="flex min-h-screen flex-col items-center py-24">
-        <div className="">
-          <h1 className="text-3xl text-center font-semibold">
-            Explore Awesome Components
-          </h1>
+      <div className="px-2 md:px-10 mt-10">
+        <Image
+          alt="logo"
+          src={logo}
+          width={200}
+          height={100}
+          className="object-cover"
+        />
+      </div>
+      <Layout className="flex min-h-screen flex-col items-center py-10">
+        <div className="flex flex-col gap-4 items-center">
+          <div className="flex justify-center items-center">
+            <AnimatedText text=" Explore Awesome Components" />
+          </div>
+
+          <div className="w-[70%] md:w-[50%] flex flex-col gap-6 justify-center items-center">
+            <p className="text-sm text-gray-500 text-center">
+              Discover a stunning collection of elegant Tailwind CSS UI
+              components that seamlessly integrate into your projects. Each
+              component is fully customizable, empowering you to create visually
+              appealing designs effortlessly. Elevate your web development with
+              these versatile and user-friendly UI elements.
+            </p>
+            <div className="flex text-5xl gap-4">
+              <SiTailwindcss className="text-[#3ebff8]" />
+              <TbBrandNextjs />
+              <FaReact className="text-[#66dbfb]" />
+              <BiLogoTypescript className="text-[#377cc8]" />
+            </div>
+          </div>
         </div>
         <div className="my-24 grid gap-6 text-center lg:mb-0 lg:grid-cols-3 lg:text-left">
           <Card
@@ -68,6 +104,7 @@ export default function Home() {
           />
         </div>
       </Layout>
+      <footer className="flex justify-center text-sm py-4 border-t">© Copyright {new Date().getFullYear()}. Progres All Rights Reserved.</footer>
     </main>
   );
 }
