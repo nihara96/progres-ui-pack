@@ -112,7 +112,11 @@ const SelectMenus = () => {
       <div className="flex flex-col gap-6 justify-center items-center w-full min-h-[300px] rounded-md border">
         <SelectMenu1 values={selectMenu1Values} />
       </div>
-      <h3>Dropdown with custom components</h3>
+      <h3>Dropdown with custom components type 1</h3>
+      <div className="flex flex-col gap-6 justify-center items-center w-full min-h-[300px] rounded-md border">
+        <SelectMenu2 values={selectMenu2Values} />
+      </div>
+      <h3>Dropdown with custom components type 2</h3>
       <div className="flex flex-col gap-6 justify-center items-center w-full min-h-[300px] rounded-md border">
         <SelectMenu2 values={selectMenu2Values} />
       </div>

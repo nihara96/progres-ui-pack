@@ -33,7 +33,7 @@ const SelectMenu2: React.FC<DropDowProps> = ({ values, onChange }) => {
     value: string | null;
     id: string | null;
     profileImage: string;
-  }>({ value: null, id: null, profileImage: "" });
+  }>(values[0]);
   const options: Array<{ value: string; id: string; profileImage: string }> =
     values;
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
