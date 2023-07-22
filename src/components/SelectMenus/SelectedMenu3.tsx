@@ -3,40 +3,62 @@ import React, { useEffect, useRef, useState } from "react";
 import { BiSolidDownArrow } from "react-icons/bi";
 
 type DropDowProps = {
-  values: Array<{ value: string; id: string; profileImage: string }>;
+  values: Array<{
+    value: string;
+    id: string;
+    profileImage: string;
+    tag: string;
+  }>;
   onChange?: ({
     value,
     id,
+    tag,
     profileImage,
   }: {
     value: string;
     id: string;
     profileImage: string;
+    tag: string;
   }) => void;
 };
 
 type CardProps = {
   value: string;
   profileImage: string;
+  tag: string;
 };
 
-const Card: React.FC<CardProps> = ({ value, profileImage }) => {
+const Card: React.FC<CardProps> = ({ value, profileImage, tag }) => {
   return (
     <div className="flex gap-2 items-center">
-      <Image alt={value} width={50} height={50} src={profileImage} className="w-6 h-6 rounded-full object-cover" />
-      <p className="text-sm">{value}</p>
+      <Image
+        alt={value}
+        width={60}
+        height={60}
+        src={profileImage}
+        className="w-10 h-10 rounded-full object-cover"
+      />
+      <div className="flex flex-col">
+        <p className="text-sm">{value}</p>
+        <p className="text-xs text-gray-500">{tag}</p>
+      </div>
     </div>
   );
 };
 
-const SelectMenu2: React.FC<DropDowProps> = ({ values, onChange }) => {
+const SelectMenu3: React.FC<DropDowProps> = ({ values, onChange }) => {
   const [selectedOption, setSelectedOption] = useState<{
     value: string | null;
     id: string | null;
     profileImage: string;
+    tag: string;
   }>(values[0]);
-  const options: Array<{ value: string; id: string; profileImage: string }> =
-    values;
+  const options: Array<{
+    value: string;
+    id: string;
+    profileImage: string;
+    tag: string;
+  }> = values;
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
 
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -45,11 +67,13 @@ const SelectMenu2: React.FC<DropDowProps> = ({ values, onChange }) => {
     value: string;
     id: string;
     profileImage: string;
+    tag: string;
   }) => {
     setSelectedOption({
       value: option.value,
       id: option.id,
       profileImage: option.profileImage,
+      tag: option.tag,
     });
     setIsDropdownOpen(false);
     onChange && onChange(option);
@@ -98,6 +122,7 @@ const SelectMenu2: React.FC<DropDowProps> = ({ values, onChange }) => {
           "Select an option"
         ) : (
           <Card
+            tag={selectedOption.tag}
             profileImage={selectedOption.profileImage}
             value={selectedOption.value}
           />
@@ -112,7 +137,11 @@ const SelectMenu2: React.FC<DropDowProps> = ({ values, onChange }) => {
               onClick={() => handleSelect(option)}
               className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
             >
-              <Card profileImage={option.profileImage} value={option.value} />
+              <Card
+                tag={option.tag}
+                profileImage={option.profileImage}
+                value={option.value}
+              />
             </li>
           ))}
         </ul>
@@ -121,4 +150,4 @@ const SelectMenu2: React.FC<DropDowProps> = ({ values, onChange }) => {
   );
 };
 
-export default SelectMenu2;
+export default SelectMenu3;
