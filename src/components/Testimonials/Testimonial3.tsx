@@ -5,11 +5,11 @@ import profile from "../../../public/images/profile.jpg";
 
 const Testimonial3 = () => {
   return (
-    <div className="flex flex-col py-10 gap-6 justify-center items-center w-full h-[600px] rounded-md border">
-      <div className="flex flex-col lg:flex-row relative w-full bg-[#111827]">
-        <div className="lg:absolute realative translate-x-24 lg:translate-x-20 -translate-y-[10%] ">
+    <div className="flex flex-col mt-10 py-10 gap-6 justify-center items-center w-full h-[600px] rounded-md border">
+      <div className="flex flex-col lg:flex-row w-full bg-[#111827]">
+        <div className="flex justify-center lg:absolute  lg:translate-x-20 -translate-y-[10%] ">
           <Image
-            className="lg:w-[350px] w-[calc(100%-200px)] h-[200px] object-cover lg:h-auto rounded-3xl"
+            className="lg:w-[350px] w-[calc(100%-50px)] h-[200px] object-cover lg:h-auto rounded-3xl"
             src={profile}
             alt="profile"
           />

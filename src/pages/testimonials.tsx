@@ -12,7 +12,7 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 
 const Testimonials = () => {
   return (
-    <Layout className="flex flex-col p-10 md:p-24 gap-10">
+    <Layout className="flex flex-col p-10 md:p-24 gap-10 w-full">
       <Link href="/">
         <AiOutlineArrowLeft className="text-3xl font-bold cursor-pointer hover:scale-110 transition duration-200" />
       </Link>
