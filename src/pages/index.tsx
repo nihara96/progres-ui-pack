@@ -61,6 +61,11 @@ export default function Home() {
             title="Textareas"
             text="Explore awesome contact forms design in tailwindcss"
           />
+          <Card
+            path="/selectMenus"
+            title="Select Menus"
+            text="Explore awesome contact forms design in tailwindcss"
+          />
         </div>
       </Layout>
     </main>
