@@ -44,27 +44,27 @@ export default function Home() {
           <Card
             path="/auth"
             title="Sign-in and Registration"
-            text="Explore awesome contact forms design in tailwindcss"
+            text="Explore awesome sign-in and registration designs in tailwindcss"
           />
           <Card
             path="/alerts"
             title="Alerts"
-            text="Explore awesome contact forms design in tailwindcss"
+            text="Explore awesome alert designs in tailwindcss"
           />
           <Card
             path="/testimonials"
             title="Testimonials"
-            text="Explore awesome contact forms design in tailwindcss"
+            text="Explore awesome testimonial designs in tailwindcss"
           />
           <Card
             path="/textareas"
             title="Textareas"
-            text="Explore awesome contact forms design in tailwindcss"
+            text="Explore awesome textarea designs in tailwindcss"
           />
           <Card
             path="/selectMenus"
             title="Select Menus"
-            text="Explore awesome contact forms design in tailwindcss"
+            text="Explore awesome select menu designs in tailwindcss"
           />
         </div>
       </Layout>
