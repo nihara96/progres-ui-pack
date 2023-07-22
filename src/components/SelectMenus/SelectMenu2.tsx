@@ -21,9 +21,9 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ value, profileImage }) => {
   return (
-    <div className="flex gap-1 items-center">
+    <div className="flex gap-2 items-center">
       <Image alt={value} width={50} height={50} src={profileImage} className="w-6 h-6 rounded-full object-cover" />
-      <p>{value}</p>
+      <p className="text-sm">{value}</p>
     </div>
   );
 };
