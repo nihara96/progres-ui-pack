@@ -77,7 +77,7 @@ const SelectMenu2: React.FC<DropDowProps> = ({ values, onChange }) => {
 
   return (
     <div
-      className="relative min-w-[300px] inline-block "
+      className="relative w-full md:w-[300px] inline-block"
       ref={dropdownRef}
       role="button" // Add role="button" to indicate that it is interactive
       tabIndex={0} // Add tabIndex={0} to make it focusable and enable keyboard interaction
