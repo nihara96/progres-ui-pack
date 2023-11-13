@@ -11,6 +11,8 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 
+import { BsGithub } from "react-icons/bs";
+
 type CardProps = {
   title?: string;
   text?: string;
@@ -40,7 +42,7 @@ const Card: React.FC<CardProps> = ({ title, text, path }) => {
 export default function Home() {
   return (
     <main>
-      <div className="px-2 md:px-10 mt-10">
+      <div className="px-2 md:px-10 mt-10 flex items-center justify-between">
         <Image
           alt="logo"
           src={logo}
@@ -48,6 +50,13 @@ export default function Home() {
           height={100}
           className="object-cover"
         />
+        <Link
+          target="_blank"
+          href="https://github.com/nihara96/progres-ui-pack.git"
+          className="flex items-center gap-2 font-semibold px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white cursor-pointer"
+        >
+          <BsGithub className="text-2xl" /> Github
+        </Link>
       </div>
       <Layout className="flex min-h-screen flex-col items-center py-10">
         <div className="flex flex-col gap-4 items-center">
@@ -104,7 +113,9 @@ export default function Home() {
           />
         </div>
       </Layout>
-      <footer className="flex justify-center text-sm py-4 border-t">© Copyright {new Date().getFullYear()}. Progres All Rights Reserved.</footer>
+      <footer className="flex justify-center text-sm py-4 border-t">
+        © Copyright {new Date().getFullYear()}. Progres All Rights Reserved.
+      </footer>
     </main>
   );
 }
